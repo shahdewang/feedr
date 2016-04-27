@@ -30,7 +30,6 @@ public class ArticlesResourceIntegrationTest extends AbstractResourceIntegration
                 Article.class);
         Assertions.assertThat(article.getStatusCode()).isEqualTo(HttpStatus.CREATED);
         Assertions.assertThat(article.getBody()).isNotNull();
-        Assertions.assertThat(article.getHeaders().getLocation().toString()).endsWith("/articles/" + feed1);
 
         final ResponseEntity<Feed> updatedEntity = restTemplate.exchange(buildUrl("/feeds/" + feed1), HttpMethod.GET,
                 new HttpEntity<String>(headers(Feed.MEDIA_TYPE_NAME, null)), Feed.class);

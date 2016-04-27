@@ -9,7 +9,7 @@ import java.util.List;
  */
 public class Feed extends AbstractMediaType {
 
-    public static final String MEDIA_TYPE_NAME = MEDIA_TYPE_NAME_BASE + "feeds" + SERIALIZATION_FORMAT_JSON;
+    public static final String MEDIA_TYPE_NAME = MEDIA_TYPE_NAME_BASE + "feed" + SERIALIZATION_FORMAT_JSON;
 
     private String feedname;
 
