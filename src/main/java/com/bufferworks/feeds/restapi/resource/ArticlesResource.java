@@ -36,6 +36,7 @@ public class ArticlesResource extends AbstractBaseResource {
     private FeedsDataService feedsDataService;
 
     @PUT
+    @Path("/{" + Paths.FEED_ID + "}")
     @Produces(Article.MEDIA_TYPE_NAME)
     @Consumes(Article.MEDIA_TYPE_NAME)
     public Response createArticle(@PathParam(Paths.FEED_ID) String feedname, Article article) {

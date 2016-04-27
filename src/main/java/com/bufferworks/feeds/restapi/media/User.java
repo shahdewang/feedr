@@ -9,7 +9,7 @@ import java.util.List;
  */
 public class User extends AbstractMediaType {
 
-    public static final String MEDIA_TYPE_NAME = MEDIA_TYPE_NAME_BASE + "users" + SERIALIZATION_FORMAT_JSON;
+    public static final String MEDIA_TYPE_NAME = MEDIA_TYPE_NAME_BASE + "user" + SERIALIZATION_FORMAT_JSON;
 
     private String username;
 
