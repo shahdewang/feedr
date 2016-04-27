@@ -2,7 +2,8 @@
 
 ### Design
 * The service layer is based on Spring Boot.
-* Uses MongoDB at the datastore layer.
+* Uses MongoDB at the datastore layer.<br>
+  I chose MongoDB because each read/write operation to the DB can be independent, we do not need transaction management in this kind of application. Users/Feeds/Articles could get added/removed independently. MongoDB allows schema-less design so content of articles can change independently. MongoDB allows eventual consistency, it's okay in this kind of application where when an article is added to Feed, the article may surface up after some time to the user.
 * The REST APIs are based on HATEOAS
 
 #### Entities
