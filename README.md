@@ -41,6 +41,11 @@ The MongoDB can be configured in **com.bufferworks.feeds.MongoDbConfig** <br>
 * Root Resource lists all sub resources, available via <br>
   URL: `http://localhost:8080/jersey/api`<br>
   Headers: `Accepts: application/com.bufferworks.root+json`<br>
+* Added **Feeds.json** that is a postman collection to with API requests
+* All REST resources are under `com.bufferworks.feeds.restapi.resource` package.
+* All media types for REST resources are under `com.bufferworks.feeds.restapi.media` package.
+* MongoDB DB Services are under `com.bufferworks.feeds.persist` package.
+* MongoDB entities are under `com.bufferworks.feeds.persist.entity` package.
 
 #### API Resources
 * UsersResource
